@@ -39,11 +39,16 @@ header {
   cursor: pointer;
 }
 
-.home{
+.navlink a{
+  text-decoration: none;
+  color: white;
+}
+
+.blue a{
   color: #2563eb;
 }
 
-.navlink:hover {
+.navlink:hover a{
   color: #2563eb;
 }
 

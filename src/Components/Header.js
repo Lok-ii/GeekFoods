@@ -1,7 +1,15 @@
 import logo from './logo.svg';
 import "./header.css";
+import { Link } from 'react-router-dom';
 
 function Header(){
+    const changeColor = (e)=>{
+        
+        document.querySelectorAll(".navlink").forEach((ele)=>{
+            ele.classList.remove("blue");
+        });
+        e.target.parentElement.classList.add("blue");
+    }
     return(
         <header>
             <div className= "logo">
@@ -10,11 +18,11 @@ function Header(){
             </div>
 
             <ul className="navbar">
-                <li className="navlink home">Home</li>
-                <li className="navlink">Quote</li>
-                <li className="navlink">Restaurants</li>
-                <li className="navlink">Foods</li>
-                <li className="navlink">Contact</li>
+                <li className="navlink blue"><Link  onClick={changeColor} to="/">Home</Link></li>
+                <li className="navlink"><Link  onClick={changeColor} to="/quote">Quote</Link></li>
+                <li className="navlink"><Link  onClick={changeColor} to="/restaurant">Restaurants</Link></li>
+                <li className="navlink"><Link  onClick={changeColor} to="/restaurant">Foods</Link></li>
+                <li className="navlink"><Link  onClick={changeColor} to="/contact">Contact</Link></li>
             </ul>
 
             <div className="menu">

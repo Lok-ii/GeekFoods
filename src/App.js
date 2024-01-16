@@ -1,20 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './Components/Header';
-import Hero from './Components/Hero';
-import GetInTouch from './Components/GetInTouch';
-import Members from './Components/Members';
-import Footer from './Components/Footer';
+import "./App.css";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+import { Outlet } from "react-router-dom";
 
 function App() {
+  
   return (
-    <div className="app">
-      <Header/>
-      <Hero />
-      <GetInTouch />
-      <Members />
+    <>
+      <Header />
+      <Outlet />
       <Footer />
-    </div>
+    </>
   );
 }
 
