@@ -54,3 +54,14 @@
     font-size: 1.3rem;
     font-weight: 700;
 }
+
+
+@media screen and (max-width: 769px){
+    .contactPage{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .rightSideContact{
+        width: 100%;
+    }
+}

@@ -3,7 +3,7 @@ import "./contactform.css";
 
 const ContactForm = () => {
   return (
-    <div className="contactForm">
+    <div className="contactFormSection">
       <svg
         width="100"
         height="100"
@@ -239,7 +239,7 @@ const ContactForm = () => {
         ></circle>
       </svg>
 
-      <form className="form" action="">
+      <form className="contactForm" action="">
         <input
           type="text"
           name="yourName"

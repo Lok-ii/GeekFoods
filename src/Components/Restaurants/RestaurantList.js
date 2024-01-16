@@ -25,7 +25,7 @@ export default function RestaurantList() {
 
   return (
     <div className="listOfRestaurants">
-      <div className="form">
+      <div className="searchForm">
         <input type="text" id="searchValue" placeholder="Search restaurant..." onChange={filterData} />
         <div className="ratingInput">
             <label htmlFor="rating">Minimum Rating: </label>
